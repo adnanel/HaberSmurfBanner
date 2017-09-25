@@ -44,9 +44,9 @@ public class HaberSmurfBanner : SlackBotPlugin() {
                         .append(it.user.toString()).append("\n```\n")
             }
             if ( found ) {
-                slackContext!!.ChatApi.PostMessage(senderId, report.toString())
+                slackContext!!.ChatApi.PostMessage(senderId, report.toString(), false)
             } else {
-                slackContext!!.ChatApi.PostMessage(senderId, "Korisnik nije imao nikakvih promjena!")
+                slackContext!!.ChatApi.PostMessage(senderId, "Korisnik nije imao nikakvih promjena!", false)
             }
 
             //konzumiraj poruku da se ne triggeruje nesta drugo pored ovoga
