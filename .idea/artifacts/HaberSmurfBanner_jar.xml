@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/HaberSmurfBanner_jar</output-path>
     <root id="archive" name="HaberSmurfBanner.jar">
       <element id="module-output" name="HaberSmurfBanner" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/gson-2.8.2.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
